@@ -1,0 +1,12 @@
+/* components/c-tab-bar/c-tab-bar.wxss */
+.tab-bar{
+  display: flex;
+}
+.item{
+  flex: 1;
+  text-align: center;
+  padding: 20rpx 0;
+}
+.active{
+  border-bottom: 1px solid #EB4450;
+}

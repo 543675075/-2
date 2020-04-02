@@ -1,0 +1,8 @@
+<!--pages/cart/cart.wxml-->
+<view class="address">
+  <button plain type="primary" class="btn">选择收获地址</button>
+</view>
+<view class="title">购物车</view>
+
+
+<c-goods-item goodsList = "{{goodsData}}"/>

@@ -1,0 +1,92 @@
+/* pages/detail/detaili.wxss */
+.swiper{
+  height: 500rpx;
+  text-align: center;
+}
+.img{
+  width: 80vw;
+}
+.price{
+  font-size: 36rpx;
+  color: #EB4450;
+  font-weight: bold;
+  padding: 40rpx 10rpx 20rpx;
+}
+.title-collect{
+  display: flex;
+  font-size: 28rpx;
+  padding: 10rpx 0 ;
+  border-bottom: 2px solid #ccc;
+  border-top: 2px solid #ccc;
+}
+.title{
+  color: #555;
+  border-right: 1px solid #000
+}
+.collect{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  padding: 0 20rpx;
+  font-size: 28rpx;
+  text-align: center;
+}
+.name{
+  color: #EB4450;
+  font-weight: bold;
+  padding: 20rpx;
+}
+.tabbar{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background: #fff;
+  height: 96rpx;
+  border-top: 1px solid #ccc
+}
+.left,.right{
+  flex:1;
+  display: flex;
+  justify-content: space-evenly;
+}
+.left-item{
+  position: relative;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.btn{
+  padding: 0;
+  width: 100% !important;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.c-icon{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 28rpx;
+  color: #333;
+}
+.push,.buy{
+  flex: 1;
+  font-size: 30rpx;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  line-height: 96rpx;
+}
+.push{
+   background-color: #FFA500;
+}
+.buy{
+  background-color: #EB4450;
+}

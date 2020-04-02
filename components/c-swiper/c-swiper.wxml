@@ -1,0 +1,8 @@
+<!--components/swiper/c-swiper.wxml-->
+<swiper indicator-dots indicator-active-color="#000" autoplay interval="3000">
+  <block wx:for="{{swiperList}}" wx:key="index">
+    <swiper-item>
+      <image src="{{item}}" mode="widthFix" class="img"/>
+    </swiper-item>
+  </block>
+</swiper>

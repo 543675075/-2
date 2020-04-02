@@ -1,0 +1,38 @@
+<!--pages/detail/detaili.wxml-->
+<view>
+  <swiper autoplay indicator-dots indicator-active-color="#EB4450" interval="3000" class="swiper">
+    <swiper-item wx:for="{{detailData.pics}}" wx:key="pics_id" class="swiper-item">
+      <image src="{{item.pics_mid}}" mode="widthFix" class="img" />
+    </swiper-item>
+  </swiper>
+  <view class="price">￥{{detailData.goods_price}}</view>
+  <view class="title-collect">
+    <view class="title">{{detailData.goods_name}}</view>
+    <view class="iconfont icon-shoucang collect">收藏</view>
+  </view>
+  <view>
+    <view class="name">图文详情</view>
+    <rich-text nodes="{{detailData.goods_introduce}}" />
+  </view>
+
+  <view class="tabbar">
+    <view class="left">
+      <view class="left-item">
+        <view class="iconfont icon-kefu-xian c-icon">客服</view>
+        <button class="btn" open-type="contact"/>
+      </view>
+      <view class="left-item">
+        <button class="btn" open-type="share"/>
+        <text class="iconfont icon-share c-icon">分享</text>
+      </view>
+      <navigator class="left-item" url="/pages/cart/cart" open-type="switchTab">
+        <text class="iconfont icon-gouwuche c-icon">购物车</text>
+      </navigator>
+
+    </view>
+    <view class="right">
+      <view class="push" bindtap="pushGoods">加入购物车</view>
+      <view class="buy">立即购买</view>
+    </view>
+  </view>
+</view>

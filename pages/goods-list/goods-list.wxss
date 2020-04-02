@@ -1,0 +1,4 @@
+/* pages/goods-list/goods-list.wxss */
+.scroll-view{
+  height: calc(100vh - 42px - 48px);
+}

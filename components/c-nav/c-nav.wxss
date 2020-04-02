@@ -1,0 +1,9 @@
+/* components/c-nav/c-nav.wxss */
+.nav{
+
+  display: flex;
+  margin-top: 20rpx;
+}
+.img{
+  padding: 20rpx;
+}

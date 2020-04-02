@@ -1,0 +1,28 @@
+<!--pages/category/category.wxml-->
+<c-search-bar />
+<view class="category">
+  <view class="category-left">
+    <scroll-view scroll-y class="scroll-view">
+      <block wx:for="{{categoryTitle}}" wx:key="index">
+        <view class="category-item {{num===index?'c-active':''}}" bindtap="handleClick" data-index="{{index}}">{{item}}</view>
+      </block>
+    </scroll-view>
+  </view>
+  <view class="category-right">
+    <scroll-view class="scroll-view scroll-right" scroll-top="{{scrollTop}}" scroll-y>
+      <view wx:for="{{categoryList}}" wx:key="index" class="wrapper">
+        <view class="title">
+          <text decode>/&nbsp;&nbsp;{{item.cat_name}}&nbsp;&nbsp;/</text>
+        </view>
+        <view class="wrapper-content">
+          <block wx:for="{{item.children}}" wx:key="index" wx:for-item="item1" wx:for-index="index1">
+            <navigator class="inner-content" url="/pages/goods-list/goods-list?cid={{item1.cat_id}}">
+              <image src="{{item1.cat_icon}}" mode="widthFix" />
+              <text>{{item1.cat_name}}</text>
+            </navigator>
+          </block>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

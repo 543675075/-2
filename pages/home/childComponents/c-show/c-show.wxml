@@ -1,0 +1,12 @@
+<!--pages/home/childComponents/c-show/c-show.wxml-->
+<view class="show">
+  <view wx:for="{{showList}}" wx:key="index">
+    <image src="{{item.floor_title.image_src}}" mode="widthFix" class="title"/>
+   
+    <view class="show-item clearfix">
+      <block wx:for="{{item.product_list}}" wx:key="index" wx:for-item = "subItem" wx:for-key="subKey">
+         <image src="{{subItem.image_src}}" mode="widthFix"/>
+      </block>
+    </view>
+  </view>
+</view>

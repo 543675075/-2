@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "c-search-bar":"/components/c-search-bar/searchbar/searchbar",
+    "c-swiper": "/components/c-swiper/c-swiper",
+    "c-nav": "/components/c-nav/c-nav",
+    "c-show": "./childComponents/c-show/c-show"
+  }
+}

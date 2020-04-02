@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "c-search-bar":"/components/c-search-bar/searchbar/searchbar"
+  }
+}

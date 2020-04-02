@@ -1,0 +1,4 @@
+<!--components/c-nav/c-nav.wxml-->
+<navigator class="nav">
+  <image wx:for="{{navList}}" wx:key="index" src="{{item.image_src}}" mode="widthFix" class="img"/>
+</navigator>

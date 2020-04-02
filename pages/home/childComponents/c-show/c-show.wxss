@@ -1,0 +1,24 @@
+/* pages/home/childComponents/c-show/c-show.wxss */
+.title{
+  margin-top: 20rpx;
+}
+.show-item image{
+  width: 33.33vw;
+  box-sizing: border-box;
+  float: left;
+}
+.show-item image:nth-child(2),.show-item image:nth-child(3){
+  padding-bottom:10rpx; 
+}
+.show-item image:nth-child(2n){
+  padding-right: 10rpx;
+  padding-left: 10rpx;
+}
+.show-item image:nth-last-child(-n+4){
+  height: 27.77vw !important;
+}
+.clearfix::after,.clearfix::before{
+  display: table;
+  content: "";
+  clear: both;
+}

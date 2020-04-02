@@ -1,0 +1,9 @@
+<!--pages/home/home.wxml-->
+<!-- 搜索栏 -->
+<c-search-bar/>
+<!-- 轮播图 -->
+<c-swiper swiperList="{{swiperList}}"/>
+<!-- 导航 -->
+<c-nav navList="{{navList}}"/>
+<!-- 广告show -->
+<c-show showList="{{showList}}" />

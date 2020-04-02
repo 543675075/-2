@@ -1,0 +1,6 @@
+<!--pages/goods-list/goods-list.wxml-->
+<c-search-bar />
+<c-tab-bar />
+<scroll-view scroll-y bindscrolltolower="upLoading" class="scroll-view">
+  <c-goods-item goodsList="{{goodsList}}"/>
+</scroll-view>

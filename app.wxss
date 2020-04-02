@@ -1,0 +1,5 @@
+@import '/assets/css/iconfont.wxss';
+
+page {
+  --themeColor:#EB4450;
+}

@@ -1,0 +1,4 @@
+/* components/swiper/c-swiper.wxss */
+.img{
+  width: 100%;
+}

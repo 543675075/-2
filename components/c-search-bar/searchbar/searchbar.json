@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "c-cells": "../cells/cells",
+        "c-cell": "../cell/cell"
+    }
+}

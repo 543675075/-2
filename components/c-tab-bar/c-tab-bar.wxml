@@ -1,0 +1,6 @@
+<!--components/c-tab-bar/c-tab-bar.wxml-->
+<view class="tab-bar">
+  <block wx:for="{{title}}" wx:key="index">
+    <text class="item {{num===index?'active':''}}" bindtap="handleClick"  data-index="{{index}}">{{item}}</text>
+  </block>
+</view>
