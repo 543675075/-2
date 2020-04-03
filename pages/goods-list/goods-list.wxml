@@ -2,5 +2,10 @@
 <c-search-bar />
 <c-tab-bar />
 <scroll-view scroll-y bindscrolltolower="upLoading" class="scroll-view">
-  <c-goods-item goodsList="{{goodsList}}"/>
+  <view wx:for="{{goodsList}}" wx:key="goods_id" wx:for="{{goodsList}}" wx:key="goods_id" >
+    <c-goods-item goodsList="{{item}}"/>
+    <!-- <c-goods-item goodsList="{{goodsList}}" /> -->
+     
+   
+  </view>
 </scroll-view>

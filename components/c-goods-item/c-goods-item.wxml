@@ -1,10 +1,11 @@
-<!--components/c-goods-item/c-goods-item.wxml-->
 <view class="goods-list">
-  <navigator wx:for="{{goodsList}}" wx:key="goods_id" class="nav" url="/pages/detail/detaili?goodsId={{item.goods_id}}">
-    <image class="img" src="{{item.goods_small_logo?item.goods_small_logo:'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}" mode="widthFix"/>
+  <slot name="checkbox" />
+  <navigator class="nav" url="/pages/detail/detaili?goodsId={{goodsList.goods_id}}">
+    <image class="img" src="{{goodsList.goods_small_logo?goodsList.goods_small_logo:'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}" mode="widthFix" />
     <view class="goods-item">
-      <text class="name">{{item.goods_name}}</text>
-      <text>￥{{item.goods_price}}</text>
+      <text class="name">{{goodsList.goods_name}}</text>
+      <text>￥{{goodsList.goods_price}}</text>
     </view>
   </navigator>
+  <slot name="count"/>
 </view>

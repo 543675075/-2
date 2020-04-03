@@ -1,16 +1,11 @@
-// components/c-goods-item/c-goods-item.js
-
+// components/c-buy-tabbar/c-buy-tabbar.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    goodsList: {
-      type: Object,
-      value: {}
-    }
+
   },
-  // 启用多个slot
   options: {
     multipleSlots: true
   },
@@ -25,5 +20,6 @@ Component({
    * 组件的方法列表
    */
   methods: {
+
   }
 })

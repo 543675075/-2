@@ -1,0 +1,35 @@
+/* components/c-buy-tabbar/c-buy-tabbar.wxss */
+.wrapper{
+  display: flex;
+  width: 100vw;
+  height: 90rpx;
+  background: #fff;
+  border-top: 1px solid #ccc;
+}
+.left{
+  flex: 7.5;
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+  align-items: center;
+}
+.total-price{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-right: 10rpx;
+}
+.total,.freight{
+  font-size: 28rpx;
+}
+.price{
+  font-weight: bold;
+  color: var(--themeColor);
+}
+.right{
+  flex:2.5;
+  color: #fff;
+  text-align: center;
+  line-height: 90rpx;
+  background: var(--themeColor);
+}

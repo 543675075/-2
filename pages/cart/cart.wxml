@@ -4,5 +4,25 @@
 </view>
 <view class="title">购物车</view>
 
+<!-- 购物车列表 -->
+<view wx:for="{{goodsData}}" wx:key="goods_id" >
+  <c-goods-item goodsList="{{item}}">
+    <checkbox-group slot="checkbox" class="checkbox" bindchange="handlecheck" data-index ="{{index}}">
+      <checkbox value="checked" checked="{{item.checked}}" ></checkbox>
+    </checkbox-group>
+    <view class="count" slot="count">
+      <view class="reduce" bindtap="goodsCount" data-name="reduce" data-index="{{index}}">-</view>
+      <view class="num">{{item.num}}</view>
+      <view class="increase" bindtap="goodsCount" data-increase="increase" data-index="{{index}}">+</view>
+    </view>
+  </c-goods-item>
+</view>
 
-<c-goods-item goodsList = "{{goodsData}}"/>
+
+<!-- 底部菜单 -->
+<c-buy-tabbar class="tabbar">
+  <checkbox-group slot="checkbox" class="checkbox">
+    <checkbox checked="{{allChecked}}">全选</checkbox>
+  </checkbox-group>
+  <text slot="count">(2)</text>
+</c-buy-tabbar>

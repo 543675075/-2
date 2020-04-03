@@ -1,0 +1,17 @@
+<!--components/c-buy-tabbar/c-buy-tabbar.wxml-->
+<view class="wrapper">
+  <view class="left">
+    <slot name="checkbox" />
+    <view class="total-price">
+      <view>
+        <text class="total">合计：</text>
+        <text class="price">￥20000</text>
+      </view>
+      <view class="freight">包含运费</view>
+    </view>
+  </view>
+  <view class="right">
+    <text>结算</text>
+    <slot name="count" />
+  </view>
+</view>

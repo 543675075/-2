@@ -1,14 +1,51 @@
 /* pages/cart/cart.wxss */
-.address{
+
+.address {
   margin-top: 20rpx;
 }
-.btn{
+
+.btn {
   font-weight: 100;
 }
-.title{
+
+.title {
   color: var(--themeColor);
   margin-top: 10rpx;
   padding: 20rpx 10rpx;
   border-top: 1px solid var(--themeColor);
   border-bottom: 1px solid var(--themeColor);
+}
+
+/* 购物车列表 */
+
+.cart-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+.checkbox{
+  margin: 0 20rpx;
+}
+.count {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 20rpx;
+  right: 10rpx;
+}
+.num{
+  padding: 0 10rpx;
+}
+.reduce,.increase{
+  border: 1px solid #ccc;
+  width: 50rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+}
+/* 底部tabbar */
+.tabbar{
+  position: absolute;
+  bottom: 0;
 }

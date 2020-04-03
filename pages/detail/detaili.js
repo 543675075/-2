@@ -60,6 +60,8 @@ Page({
     if (index === -1) {
       //  第一次添加
       this.goodsData.num = 1
+      // 这个属性是为了后面购物车计算的
+      this.goodsData.checked = false
       cartGoods.push(this.goodsData)
     }else{
       // 本身存在

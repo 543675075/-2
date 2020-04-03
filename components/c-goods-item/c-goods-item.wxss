@@ -1,11 +1,17 @@
 /* components/c-goods-item/c-goods-item.wxss */
+.goods-list{
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
 .nav{
   display: flex;
   padding: 10rpx;
-  border-bottom: 1px solid #ccc;
 }
 .img{
-  width: 33%;
+  width: 33vw;
+  height: 33vw;
 }
 .name{
   display: -webkit-box;
