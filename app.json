@@ -5,12 +5,14 @@
     "pages/cart/cart",
     "pages/profile/profile",
     "pages/goods-list/goods-list",
-    "pages/detail/detaili"
+    "pages/detail/detaili",
+    "pages/pay/pay",
+    "pages/button/button"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#EB4450",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "cyl的个人练习小程序",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {

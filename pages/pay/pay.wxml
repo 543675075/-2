@@ -1,0 +1,20 @@
+<!--pages/pay/pay.wxml-->
+<view class="address1">
+  <c-address address="{{address}}"/>
+</view>
+<view class="title">购物车</view>
+
+<!-- 购物车列表 -->
+<view wx:for="{{payGoods}}" wx:key="goods_id" >
+  <c-goods-item goodsList="{{item}}">
+    <view class="count" slot="count">
+      <view class="num">{{item.num}}</view>
+    </view>
+  </c-goods-item>
+</view>
+
+
+<!-- 底部菜单 -->
+<c-buy-tabbar class="tabbar" totalPrice="{{totalPrice}}" bindhandlePay = "handlePay">
+  <text slot="count">({{totalNum}})</text>
+</c-buy-tabbar>

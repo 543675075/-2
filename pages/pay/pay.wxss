@@ -1,13 +1,7 @@
-/* pages/cart/cart.wxss */
-
+/* pages/pay/pay.wxss */
 .address1 {
   margin-top: 20rpx;
 }
-
-.btn {
-  font-weight: 100;
-}
-
 .title {
   color: var(--themeColor);
   margin-top: 10rpx;
@@ -15,7 +9,6 @@
   border-top: 1px solid var(--themeColor);
   border-bottom: 1px solid var(--themeColor);
 }
-
 /* 购物车列表 */
 
 .cart-item {
@@ -23,9 +16,6 @@
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ccc;
-}
-.checkbox{
-  margin: 0 20rpx;
 }
 .count {
   display: flex;
@@ -36,13 +26,6 @@
 }
 .num{
   padding: 0 10rpx;
-}
-.reduce,.increase{
-  border: 1px solid #ccc;
-  width: 50rpx;
-  height: 50rpx;
-  line-height: 50rpx;
-  text-align: center;
 }
 /* 底部tabbar */
 .tabbar{

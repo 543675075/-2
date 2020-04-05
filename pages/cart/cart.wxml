@@ -1,6 +1,7 @@
 <!--pages/cart/cart.wxml-->
-<view class="address">
-  <button plain type="primary" class="btn">选择收获地址</button>
+<view class="address1">
+  <button plain type="primary" class="btn" bindtap="getAddress" wx:if="{{!address.userName}}">选择收获地址</button>
+  <c-address address="{{address}}" wx:else />
 </view>
 <view class="title">购物车</view>
 
@@ -11,18 +12,18 @@
       <checkbox value="checked" checked="{{item.checked}}" ></checkbox>
     </checkbox-group>
     <view class="count" slot="count">
-      <view class="reduce" bindtap="goodsCount" data-name="reduce" data-index="{{index}}">-</view>
+      <view class="reduce" bindtap="goodsCount" data-method= "{{-1}}" data-index="{{index}}">-</view>
       <view class="num">{{item.num}}</view>
-      <view class="increase" bindtap="goodsCount" data-increase="increase" data-index="{{index}}">+</view>
+      <view class="increase" bindtap="goodsCount" data-method ="{{1}}" data-index="{{index}}">+</view>
     </view>
   </c-goods-item>
 </view>
 
 
 <!-- 底部菜单 -->
-<c-buy-tabbar class="tabbar">
+<c-buy-tabbar class="tabbar" totalPrice="{{totalPrice}}" bindhandlePay = "handlePay">
   <checkbox-group slot="checkbox" class="checkbox">
     <checkbox checked="{{allChecked}}">全选</checkbox>
   </checkbox-group>
-  <text slot="count">(2)</text>
+  <text slot="count">({{totalNum}})</text>
 </c-buy-tabbar>

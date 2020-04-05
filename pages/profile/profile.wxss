@@ -1,1 +1,99 @@
 /* pages/profile/profile.wxss */
+.profile{
+  background: #EDECE8;
+  color: #666;
+   font-size: 28rpx;
+}
+/* 头部 */
+.header{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+  padding: 10rpx 0 ;
+  box-sizing: border-box;
+  background-color: var(--themeColor);
+}
+/* 头像名字 */
+.lg-img{
+  width: 100vw;
+  height: 46vh;
+  filter: blur(10rpx);
+}
+.user-info{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% ,-50%);
+  text-align: center;
+}
+.sm-img{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  padding-bottom: 40rpx; 
+}
+
+
+.container{
+  position: relative;
+  top: -40rpx;
+  padding: 0 40rpx;
+}
+/* 搜藏店铺等信息 */
+.star{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #fff;
+  text-align: center;
+  padding: 10rpx 0 ;
+}
+.item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.num{
+  color: var(--themeColor);
+}
+/* 我的订单 */
+.order{
+  margin: 20rpx 0;
+  background-color: #fff;
+}
+.my-order{
+  padding: 20rpx ;
+  border-bottom: 1px solid  #ccc;
+}
+.order-info{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10rpx 0 ;
+}
+.order-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+icon.iconfont{
+  color: var(--themeColor);
+  font-size: 48rpx;
+}
+/* 收货地址，客服，意见等 */
+.service{
+  padding: 10px;
+  background: #fff;
+}
+.tel{
+  display: flex;
+  justify-content: space-between;
+}
+.service-info{
+  margin: 20rpx 0;
+}
+.opinion{
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}

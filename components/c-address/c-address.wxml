@@ -1,0 +1,8 @@
+<!--components/c-address/c-address.wxml-->
+<view class="address2">
+    <view class="name-tel">
+      <text>{{address.userName}}</text>
+      <text>{{address.telNumber}}</text>
+    </view>
+    <view class="county">{{address.provinceName+address.cityName+address.countyName+address.detailInfo}}</view>
+  </view>

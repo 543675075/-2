@@ -1,2 +1,59 @@
 <!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+
+<view class="profile">
+  <view class="header">
+    <button size="mini" bindtap="login"  wx:if="{{!userInfo.nickName}}">登陆</button>
+    <view wx:else >
+      <image src="{{userInfo.avatarUrl}}" class="lg-img"></image>
+      <view class="user-info">
+        <image src="{{userInfo.avatarUrl}}" class="sm-img"></image>
+        <view class="user-name">{{userInfo.nickName}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="container">
+
+    <view class="star">
+      <view class="item" wx:for="{{storeInfo}}" wx:key="index">
+        <text class="num">0</text>
+        <text class="star-store">{{item}}</text>
+      </view>
+    </view>
+
+    <view class="order">
+      <view class="my-order">我的订单</view>
+      <view class="order-info">
+        <view class="order-item">
+          <icon class="iconfont icon-Order"></icon>
+          <text>全部订单</text>
+        </view>
+        <view class="order-item">
+          <icon class="iconfont icon-fukuan"></icon>
+          <text>待付款</text>
+        </view>
+        <view class="order-item">
+          <icon class="iconfont icon-receive-act"></icon>
+          <text>待收货</text>
+        </view>
+        <view class="order-item">
+          <icon class="iconfont icon-duizhang-tuikuan"></icon>
+          <text>退款/退货</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="service">收获地址管理</view>
+
+    <view class="service-info">
+      <view class="tel service">
+        <view>联系客服</view>
+        <view>15850396625</view>
+      </view>
+      <view class="service opinion">意见反馈</view>
+      <view class="service">关于我们</view>
+    </view>
+    <view class="service">把应用推荐给其他人</view>
+
+  </view>
+</view>

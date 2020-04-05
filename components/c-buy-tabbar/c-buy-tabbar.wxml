@@ -5,13 +5,13 @@
     <view class="total-price">
       <view>
         <text class="total">合计：</text>
-        <text class="price">￥20000</text>
+        <text class="price">￥{{totalPrice}}</text>
       </view>
       <view class="freight">包含运费</view>
     </view>
   </view>
   <view class="right">
-    <text>结算</text>
+    <text bindtap="handlePay">结算</text>
     <slot name="count" />
   </view>
 </view>

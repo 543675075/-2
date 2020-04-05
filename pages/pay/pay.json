@@ -4,5 +4,5 @@
     "c-buy-tabbar": "/components/c-buy-tabbar/c-buy-tabbar",
     "c-goods-item": "/components/c-goods-item/c-goods-item"
   },
-  "navigationBarTitleText": "购物车"
+  "navigationBarTitleText": "确认支付"
 }

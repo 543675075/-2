@@ -4,5 +4,6 @@
     "c-swiper": "/components/c-swiper/c-swiper",
     "c-nav": "/components/c-nav/c-nav",
     "c-show": "./childComponents/c-show/c-show"
-  }
+  },
+  "navigationBarTitleText": "个人练习商城"
 }

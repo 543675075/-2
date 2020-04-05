@@ -4,7 +4,10 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    totalPrice: {
+      type: Number,
+      value: 0
+    }
   },
   options: {
     multipleSlots: true
@@ -20,6 +23,8 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    handlePay(){
+      this.triggerEvent("handlePay")
+    }
   }
 })

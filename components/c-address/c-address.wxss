@@ -1,0 +1,13 @@
+/* components/c-address/c-address.wxss */
+.address2{
+  font-size: 28rpx;
+  color: #555;
+  padding: 0 20rpx;
+}
+.name-tel{
+  display: flex;
+  justify-content: space-between;
+}
+.county{
+  color: #ccc;
+}
